@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>详情</title>
+    <link rel="stylesheet" href="css/xiangqing.css">
+    <script>
+        var pixelRatio = 1 / window.devicePixelRatio; //还原设备的真实分辨率；
+        //devicePixelRatio设备的像素比；
+
+        document.write('<meta name="viewport" content="width=device-width,initial-scale=' + pixelRatio + ',minimum-scale=' + pixelRatio + ',maximum-scale=' + pixelRatio + '" />');
+        var html = document.getElementsByTagName('html')[0];
+        var pageWidth = html.getBoundingClientRect().width;
+        html.style.fontSize = pageWidth / 10 + "px";
+    </script>
+</head>
+<body>
+    <div class="header">
+        <ul>
+           <a href="index.html"><li><img src="img/jiantou1.png" alt=""></li></a>
+            <li><img src="img/sousuo.png" alt=""></li>
+        </ul>
+    </div>
+    <div class="banner"></div>
+    <div class="gl">
+        <div class="shou">
+            <div class="er">【2018 | 首尔旅游攻略】</div>
+            <div class="ren">
+                <div class="tu"><img src="img/yuan.png" alt=""></div>
+                <div class="zi">
+                    <p>小狮妹<img src="img/nv.png" alt=""><br>
+                        66<span>回复 | </span>431<span>收藏 | </span>5684<span>浏览</span><br>
+                        <i>发布于2018-03-12 10：32</i>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="xc">
+            <p>行程单</p>
+            <table border="1" cellspacing="0"  align="center" id="tbl" >
+                <tr>
+                    <td class="a1">D1<br><span>04-05</span></td>
+                    <td class="a2"><span>上海-首尔</span><br>在阿里旅行上买机票，一开始看的时候是南航,
+                        早上8:30起飞，回来那天18:55起飞，感觉时间都是极好的
+                    </td>
+                </tr>
+                <tr>
+                    <td class="a1">D2<br><span>04-06</span></td>
+                    <td class="a2">首尔的酒店，一开始是在携程上看的，按照地理位置，
+                        酒店星级数，看中了一家位于明洞的“明洞天空花园中央酒店”，4晚2700+，
+                        而且此酒店还有公主房，可惜没订到。
+                    </td>
+                </tr>
+                <tr>
+                    <td class="a1">D3<br><span>04-07</span></td>
+                    <td class="a2">签证，很简单，相信大部分同学们都是这样，
+                        taobao拍上韩国签证，小歪找的那家，258一人，上海地区还不需要财产证明，
+                        只需要护照，照片，身份证，填表格就行了
+                    </td>
+                </tr>
+                <tr class="gd" id="gd">
+                    <td class="a1" colspan="2"><i id="jz">查看全部五日行程</i></td>
+                </tr>
+            </table>
+            <table border="1" cellspacing="0"class="qw">
+                <tr class="xs" id="xs">
+                    <td class="a1">D4<br><span>04-08</span></td>
+                    <td class="a2">首尔的酒店，一开始是在携程上看的，按照地理位置，
+                        酒店星级数，看中了一家位于明洞的“明洞天空花园中央酒店”，4晚2700+，
+                        而且此酒店还有公主房，可惜没订到。
+                    </td>
+                </tr>
+                <tr class="xs" id="xz">
+                    <td class="a1">D5<br><span>04-09</span></td>
+                    <td class="a2">签证，很简单，相信大部分同学们都是这样，
+                        taobao拍上韩国签证，小歪找的那家，258一人，上海地区还不需要财产证明，
+                        只需要护照，照片，身份证，填表格就行了
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="tupian">
+        <img src="img/t1.png" alt="" class="t1">
+        <img src="img/t2.png" alt="" class="t2">
+    </div>
+    <div class="shuo">
+        <div class="zi">
+            <p>1. 通讯：去某宝上买韩国电话卡最方便，大概10元/天
+               ，别再买蛋了，那个东西又重又麻烦价格跟电话卡差不多。<br>
+                2. 机场市区交通：无论仁川&金浦又快又便宜的方式
+                是地铁；巴士时间较长价格比地铁贵些；打车巨贵打不
+                起。所以我一般是坐地铁从仁川到市区&坐大巴从市区
+                回机场（视个人情况而定，如果酒店附近有机场巴士车
+                站，你又不怎么赶时间，大巴还是非常省力的）。
+                机场巴士：通往市区各酒店的豪华大巴90元左右，
+                高峰时段要2个小时到机场。
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li><img src="img/zan.png" alt="">赞229</li>
+            <li>回复楼主</li>
+            <li><img src="img/xin.png" alt=""></li>
+            <li><img src="img/fenxiang.png" alt=""></li>
+        </ul>
+    </div>
+</body>
+</html>
+<script>
+        function $(id){return document.getElementById(id)};
+        var jz = $("jz");
+        var xs = $("xs");
+        var xz = $("xz");
+        var gd = $("gd");
+        jz.onclick = function(){
+            xs.style.display = "block";
+            xz.style.display = "block";
+            gd.style.display = "none";
+        }
+    </script>

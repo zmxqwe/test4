@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <style>
+        .damao{
+            color: #56c083;
+            border-bottom:3px solid #56c083;
+        }
+    </style>
+     <script>
+        var pixelRatio = 1 / window.devicePixelRatio; //还原设备的真实分辨率；
+        //devicePixelRatio设备的像素比；
+
+        document.write('<meta name="viewport" content="width=device-width,initial-scale=' + pixelRatio + ',minimum-scale=' + pixelRatio + ',maximum-scale=' + pixelRatio + '" />');
+        var html = document.getElementsByTagName('html')[0];
+        var pageWidth = html.getBoundingClientRect().width;
+        html.style.fontSize = pageWidth / 10 + "px";
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="innearc">
+            <p>上海 </p>
+            <div class="jiantou"></div>
+            <input type="text" placeholder='搜 “ 新西兰 ” 试试'>
+            <div class="icon"></div>
+        </div>
+    </div>
+    <div class="banner">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/banner.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                      <img src="img/banner2.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                     <img src="img/banner.png" alt="">
+                </div>
+            </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="js/swiper.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+        var swiper = new Swiper('.swiper-container', {
+             pagination: {
+            el: '.swiper-pagination',
+            },
+        });
+  </script>
+    </div>
+    <div class="rmjd">
+        <div class="innearc">
+            <div class="rmjd_txt">热门景点</div>
+            <ul id = "sh">
+                <li class = "damao">
+                    上海
+                  
+                </li>
+                <li>成都
+                  
+                </li>
+                <li>北京
+                    
+                </li>
+                <li>三亚
+                    
+                </li>
+            </ul>
+            <ul class = "tp" id ="tp1">
+                <li>
+                    <img src="img/dsn.png" alt="">
+                    <p><a href="xiangqing.html">上海迪士尼乐园</a></p>
+                    <span>Disney 家庭旅游必去</span>
+                </li>
+                <li>
+                     <img src="img/dfmz.png" alt="">
+                     <p><a href="xiangqing.html">东方明珠电视塔</a></p>
+                    <span>感受高空云端漫步上海</span>
+                </li>
+                <li style = "margin-right: 0">
+                     <img src="img/gz.png" alt="">
+                     <p><a href="xiangqing.html">古镇朱家角</a></p>
+                    <span>逛沪上第一明清北大街</span>
+                </li>
+            </ul>
+             <ul class = "tp" style ="display: none" id ="tp2">
+               
+                <li>
+                     <img src="img/dfmz.png" alt="">
+                     <p>东方明珠电视塔</p>
+                    <span>感受高空云端漫步上海</span>
+                </li>
+                <li >
+                     <img src="img/gz.png" alt="">
+                     <p>古镇朱家角</p>
+                    <span>逛沪上第一明清北大街</span>
+                </li>
+                 <li style = "margin-right: 0">
+                    <img src="img/dsn.png" alt="">
+                    <p>上海迪士尼乐园</p>
+                    <span>Disney 家庭旅游必去</span>
+                </li>
+            </ul>
+             <ul class = "tp" style ="display: none" id = "tp3">
+                <li>
+                    <img src="img/dsn.png" alt="">
+                    <p>上海迪士尼乐园</p>
+                    <span>Disney 家庭旅游必去</span>
+                </li>
+               
+                <li>
+                     <img src="img/gz.png" alt="">
+                     <p>古镇朱家角</p>
+                    <span>逛沪上第一明清北大街</span>
+                </li>
+                 <li style = "margin-right: 0">
+                     <img src="img/dfmz.png" alt="">
+                     <p>东方明珠电视塔</p>
+                    <span>感受高空云端漫步上海</span>
+                </li>
+            </ul>
+             <ul class = "tp" style ="display: none" id = "tp4">
+               
+                <li>
+                     <img src="img/dfmz.png" alt="">
+                     <p>东方明珠电视塔</p>
+                    <span>感受高空云端漫步上海</span>
+                </li>
+                <li >
+                     <img src="img/gz.png" alt="">
+                     <p>古镇朱家角</p>
+                    <span>逛沪上第一明清北大街</span>
+                </li>
+                 <li style = "margin-right: 0">
+                    <img src="img/dsn.png" alt="">
+                    <p>上海迪士尼乐园</p>
+                    <span>Disney 家庭旅游必去</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="csxwf" style="margin-bottom: 0;">
+        <div class="innearc">
+            <div class="xwf_tit">
+                <p>城市新玩法</p>
+                <span>查看更多推荐 ></span>
+            </div>
+            <div class="li"><img src="img/li.png" alt=""></div>
+            <div class="lnsh">
+                <span>老灵的里弄上海</span>
+                <p>果里弄是一副画卷，展开它，你看到的会是上海人生动的邻里日常。<br> 里弄见证着这个城市的百年风雨，也承载着几代人对“家”的记忆</p>
+            </div>
+        </div>
+    </div>
+    <div class="csxwf" id = "sd">
+        <div class="innearc">
+            <div class="xwf_tit">
+                <p>城市新玩法</p>
+                <span>查看更多推荐 ></span>
+            </div>
+            <div class="li"><img src="img/li.png" alt=""></div>
+            <div class="lnsh">
+                <span>老灵的里弄上海</span>
+                <p>果里弄是一副画卷，展开它，你看到的会是上海人生动的邻里日常。<br> 里弄见证着这个城市的百年风雨，也承载着几代人对“家”的记忆</p>
+                <div class="jt" id = "jt"></div>
+                <div class="zsgd" id = "gd">点击箭头展示更多</div>
+            </div>
+        </div>
+    </div>
+    <div class="csxwf " style = "display: none; margin-bottom: 0;" id = "ling" >
+        <div class="innearc">
+            <div class="xwf_tit">
+                <p>城市新玩法</p>
+                <span>查看更多推荐 ></span>
+            </div>
+            <div class="li"><img src="img/li.png" alt=""></div>
+            <div class="lnsh">
+                <span>老灵的里弄上海</span>
+                <p>果里弄是一副画卷，展开它，你看到的会是上海人生动的邻里日常。<br> 里弄见证着这个城市的百年风雨，也承载着几代人对“家”的记忆</p>
+            </div>
+        </div>
+    </div>
+    <div class="csxwf " style = "display: none"  id = "ling1">
+        <div class="innearc">
+            <div class="xwf_tit">
+                <p>城市新玩法</p>
+                <span>查看更多推荐 ></span>
+            </div>
+            <div class="li"><img src="img/li.png" alt=""></div>
+            <div class="lnsh">
+                <span>老灵的里弄上海</span>
+                <p>果里弄是一副画卷，展开它，你看到的会是上海人生动的邻里日常。<br> 里弄见证着这个城市的百年风雨，也承载着几代人对“家”的记忆</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li>
+                <img src="img/sy.png" alt="">
+                <p>首页</p>
+            </li>
+            <li>
+                <img src="img/md.png" alt="">
+                <p>目的地</p>
+            </li>
+            <li>
+                <img src="img/fx.png" alt="">
+                <p>发现</p>
+            </li>
+            <li>
+                <img src="img/me.png" alt="">
+                <p>我</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
+<script>
+    function $(id){return document.getElementById(id)};
+    var ul = $("sh");
+    var lis = ul.children;
+    var tp = document.getElementsByClassName("tp");
+    
+    for(i = 0;i<lis.length;i++){
+        lis[i].index = i;
+        lis[i].onmouseover = function(){
+            for(j=0;j<lis.length;j++){
+                lis[j].className = "";
+                tp[j].style.display = "none";
+            }
+            this.className = "damao"
+           tp[this.index].style.display = "block";
+        }
+    }
+    function $(id){return document.getElementById(id)};
+    var jt = $("jt");
+    var lin = $("ling");
+    var ling1 = $("ling1");
+    var gd = $("gd");
+    var sd = $("sd");
+     jt.onclick = function(){
+       lin.style.display = "block";
+        ling1.style.display = "block";
+        jt.style.display = "none";
+        gd.style.display = "none";
+        sd.style.marginBottom = "0";
+    }
+</script>
